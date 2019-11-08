@@ -8,15 +8,15 @@ namespace NUnit_TriangleExercise
     {
         public static void Main(string[] args)
         {
-            int side1, side2, side3;
+            double side1, side2, side3;
 
 
             Console.WriteLine("Insert side 1 of triangle: ");
-            side1 = int.Parse(Console.ReadLine());
+            side1 = double.Parse(Console.ReadLine());
             Console.WriteLine("Insert side 2 of triangle: ");
-            side2 = int.Parse(Console.ReadLine());
+            side2 = double.Parse(Console.ReadLine());
             Console.WriteLine("Insert side 3 of triangle: ");
-            side3 = int.Parse(Console.ReadLine());
+            side3 = double.Parse(Console.ReadLine());
 
             Checker Checker = new Checker();
             Console.WriteLine(Checker.CheckSides(side1, side2, side3));
@@ -25,7 +25,7 @@ namespace NUnit_TriangleExercise
     }
     public class Checker
     {
-        public string CheckSides(int x, int y, int z)
+        public string CheckSides(double x, double y, double z)
         {
             if(x == y && y == z)
             {

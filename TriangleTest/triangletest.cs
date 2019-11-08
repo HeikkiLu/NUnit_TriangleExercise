@@ -16,9 +16,9 @@ namespace TriangleTest
         {
             // Arrange
             Checker Checker = new Checker();
-            int x = 20;
-            int y = 20;
-            int z = 20;
+            double x = 20.0;
+            double y = 20.0;
+            double z = 20.0;
             string oletus = "All triangle sides are equal.";
             // Act
             string tulos = Checker.CheckSides(x, y, z);
@@ -31,9 +31,9 @@ namespace TriangleTest
         {
             // Arrange
             Checker Checker = new Checker();
-            int x = 20;
-            int y = 20;
-            int z = 10;
+            double x = 20;
+            double y = 20;
+            double z = 20.5;
             string oletus = "Two of the triangle sides are equal.";
             // Act
             string tulos = Checker.CheckSides(x, y, z);
@@ -46,9 +46,9 @@ namespace TriangleTest
         {
             // Arrange
             Checker Checker = new Checker();
-            int x = 30;
-            int y = 20;
-            int z = 10;
+            double x = 30.1;
+            double y = 20.5;
+            double z = 10;
             string oletus = "All of the triangle sides are unequal.";
             // Act
             string tulos = Checker.CheckSides(x, y, z);
