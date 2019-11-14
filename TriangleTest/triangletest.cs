@@ -5,6 +5,8 @@ namespace TriangleTest
 {
     public class Tests
     {
+        Checker Checker = new Checker();
+
         [SetUp]
         public void Setup()
         {
@@ -15,7 +17,6 @@ namespace TriangleTest
         public void EqualTriangle()
         {
             // Arrange
-            Checker Checker = new Checker();
             double x = 20.0;
             double y = 20.0;
             double z = 20.0;
@@ -30,7 +31,6 @@ namespace TriangleTest
         public void TwoSidesEqualTriangle()
         {
             // Arrange
-            Checker Checker = new Checker();
             double x = 20;
             double y = 20;
             double z = 20.5;
@@ -45,7 +45,6 @@ namespace TriangleTest
         public void UnequalTriangle()
         {
             // Arrange
-            Checker Checker = new Checker();
             double x = 30.1;
             double y = 20.5;
             double z = 10;
